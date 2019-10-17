@@ -1,0 +1,10 @@
+<p>index works!</p>
+<button [routerLink]="['/new']">New Author</button>
+<hr>
+
+<div *ngFor="let author of authors">
+    <p>Name: {{author.name}}</p>
+
+    <app-author [oneAuthor]="author"></app-author>
+
+</div>
