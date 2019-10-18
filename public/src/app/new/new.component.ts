@@ -23,8 +23,9 @@ export class NewComponent implements OnInit {
     console.log("NEw Button Clicked")
     const observable = this.http.postAuthor(this.newAuthor);
     observable.subscribe((data: any)=>{
+      console.log(data)
       if(data.message === 'fail'){
-        this.errors = data.errors;
+        this.errors = data.error['message'];
       } else{
         this.router.navigate(['/']);
       }

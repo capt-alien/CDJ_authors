@@ -15,7 +15,6 @@ export class IndexComponent implements OnInit {
   ngOnInit() {
     this.getAuthors();
   }
-
   getAuthors(){
     const observable = this.http.getAuthors();
     observable.subscribe((data:any)=>{
@@ -29,11 +28,5 @@ export class IndexComponent implements OnInit {
       this.getAuthors();
     })
   }
-  // deleteAuthor(id:any){
-  //   const observable = this.http.deleteAuthor(id)
-  //     observable.subscribe((data:any)=>{
-  //       this.getAuthors()
-  //     });
-  // }
 
 }
