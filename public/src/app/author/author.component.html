@@ -1,4 +1,6 @@
 
 <p>Name: {{ oneAuthor.name }}</p>
 <button routerLink="/edit/{{oneAuthor._id}}">Edit {{ oneAuthor.name }}</button>
+<button (click)="deleteAuthor(oneAuthor._id)">Delete</button>
+
 <hr>

@@ -4,7 +4,11 @@
 
 <div *ngFor="let author of authors">
     <p>Name: {{author.name}}</p>
+    <!-- <p>Name: {{ oneAuthor.name }}</p> -->
+    <button routerLink="/edit/{{author._id}}">Edit {{ author.name }}</button>
+    <button (click)="deleteAuthor(author._id)">Delete</button>
+    <!-- <app-author [oneAuthor]="author"></app-author> -->
 
-    <app-author [oneAuthor]="author"></app-author>
+    <!-- <button (click)="deleteAuthor(oneAuthor._id)">Delete</button> -->
 
 </div>

@@ -11,6 +11,7 @@ import { AuthorComponent } from './author/author.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpService } from './http.service';
 import { FormsModule } from '@angular/forms';
+// import { DeleteComponent } from './delete/delete.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     EditComponent,
     NewComponent,
     NotFoundComponent,
-    AuthorComponent
+    AuthorComponent,
+    // DeleteComponent
   ],
   imports: [
     FormsModule,

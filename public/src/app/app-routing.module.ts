@@ -7,6 +7,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthorComponent } from './author/author.component';
 
 
+
+
 const routes: Routes = [
   {path: '', component: IndexComponent},
   {path: 'new', component: NewComponent},

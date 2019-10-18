@@ -1,1 +1,19 @@
 <p>edit works!</p>
+
+<button [routerLink]="['/']">Cancel</button>
+<hr>
+
+<p>Name: {{ author.name }}</p><br>
+
+<form (submit)="buttonSubmit(author._id)">
+<input type="text" name="name" [(ngModel)]="author.name">
+<input type="submit" value="Save">
+
+</form>
+
+{{ errors | json}}
+
+<!-- <form (submit)="createAuthor()">
+    subject: <input type="text" name="name" [(ngModel)]="newAuthor.name"><br>
+    <input type="submit" value="Create!">
+</form> -->

@@ -18,7 +18,7 @@ export class HttpService {
   }
   // GET ONE
   getOneAuthor(id){
-    return this.http.get('/authors/${id}')
+    return this.http.get(`/authors/${id}`)
   }
   // NEW
   postAuthor(data){
@@ -26,11 +26,11 @@ export class HttpService {
   }
   // EDIT
   updateAuthor(id, data){
-    return this.http.put('/authors/${id}', data)
+    return this.http.put(`/authors/${id}`, data)
   }
   // DELETE
   deleteAuthor(id){
-    return this.http.delete('/authors/${id}')
+    return this.http.delete(`/authors/${id}`)
   }
   // END ROUTES
 };

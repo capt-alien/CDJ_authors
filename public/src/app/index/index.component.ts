@@ -23,5 +23,17 @@ export class IndexComponent implements OnInit {
       console.log(data)
     })
   }
+  deleteAuthor(id) {
+    let observable = this.http.deleteAuthor(id);
+    observable.subscribe(data=> {
+      this.getAuthors();
+    })
+  }
+  // deleteAuthor(id:any){
+  //   const observable = this.http.deleteAuthor(id)
+  //     observable.subscribe((data:any)=>{
+  //       this.getAuthors()
+  //     });
+  // }
 
 }
